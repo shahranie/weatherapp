@@ -1,5 +1,5 @@
 package com.shahranie.android.weatherapp;
-
+//using async method
 import android.content.Context;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
