@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:layout_margin="16dp"
+    android:theme="@android:style/Theme.Light.NoTitleBar"
+    tools:context="com.shahranie.android.weatherapp.MainActivity">
+
+
+    <TextView
+        android:id="@+id/location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="16dp"
+        android:textColor="@color/white"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+
+        android:text="Location"
+        />
+
+    <Button
+        android:id="@+id/button_refresh"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="16dp"
+        android:textColor="@color/white"
+        style="@style/AppTheme.RoundedCornerMaterialButton"
+        android:text="Refresh"
+        android:textAllCaps="false"
+        />
+
+    <TextView
+        android:id="@+id/temperature"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@id/location"
+        android:textColor="@color/white"
+        android:drawableLeft="@drawable/ic_temperature"
+        android:drawableRight="@drawable/ic_celcius"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:gravity="center"
+        android:textStyle="bold"
+
+
+        android:text=" Temp "
+        />
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="15dp"
+
+        />
+
+    <TextView
+        android:id="@+id/wind_speed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/icon"
+        android:layout_toLeftOf="@id/humidity"
+        android:textColor="@color/white"
+        android:drawableLeft="@drawable/ic_wind"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:paddingRight="@dimen/small"
+
+
+        android:text=" speed "
+        />
+
+    <TextView
+        android:id="@+id/humidity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/icon"
+        android:textColor="@color/white"
+        android:drawableLeft="@drawable/ic_humidity"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:layout_centerInParent="true"
+
+
+        android:text=" humidity "
+        />
+
+    <TextView
+        android:id="@+id/cloudiness"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/humidity"
+        android:layout_below="@id/icon"
+        android:textColor="@color/white"
+        android:drawableLeft="@drawable/ic_wind"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:paddingLeft="@dimen/small"
+
+
+        android:text=" cloudiness "
+        />
+
+</RelativeLayout>
